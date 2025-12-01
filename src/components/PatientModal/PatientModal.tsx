@@ -26,7 +26,6 @@ export const PatientModal = ({ patient }: { patient: Patient }) => {
 
         setPatients(updatedPatients)
 
-        console.log("aloha edited", patients)
         setPopUp({ color: "green", message: "Patient edited" })
         setSelectedPatientId(null)
         setEditMode(false)

@@ -15,9 +15,9 @@
     padding: 10px;
 
     &::-webkit-scrollbar {
-        width: 0px; // Hace el scrollbar invisible horizontalmente
-        height: 0px; // Hace el scrollbar invisible verticalmente
-        display: none; // Asegura que no ocupe espacio (opcional, pero útil)
+        width: 0px;
+        height: 0px;
+        display: none;
     }
 }
 

@@ -30,13 +30,11 @@ function App() {
     }
 
     fetchPatients()
-    console.log("alo", patients)
 
 
   }, [])
 
 
-  console.log("alo", patients)
   return (
 
 

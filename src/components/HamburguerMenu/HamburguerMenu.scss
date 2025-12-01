@@ -1,5 +1,3 @@
-// --- Definición de Variables y Keyframes ---
-
 $color-fondo-principal: #331f6e;
 $color-texto-principal: #ffffff;
 $color-resaltado-activo: rgba(255, 255, 255, 0.15);
@@ -30,7 +28,7 @@ $ancho-desktop-min: 768px;
         height: 2px;
         background-color: white;
         transition: all 300ms ease-in-out;
-        transform-origin: 2px 1px; // Punto de pivote para la rotación
+        transform-origin: 2px 1px;
     }
 }
 

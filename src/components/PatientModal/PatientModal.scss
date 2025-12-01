@@ -11,9 +11,9 @@
     top: 5%;
 
     &::-webkit-scrollbar {
-        width: 0px; // Hace el scrollbar invisible horizontalmente
-        height: 0px; // Hace el scrollbar invisible verticalmente
-        display: none; // Asegura que no ocupe espacio (opcional, pero útil)
+        width: 0px;
+        height: 0px;
+        display: none;
     }
 
 
@@ -31,7 +31,6 @@
             font-size: 1em;
             font-weight: 600;
             height: 30px;
-            // padding: 12px 32px;
             border-radius: 9999px;
             background-color: #7696ee;
             border: 2px solid #7696ee;
@@ -90,7 +89,6 @@
     button {
         font-size: 0.6em;
         font-weight: 400;
-        // padding: 12px 32px;
         border-radius: 9999px;
         background-color: #7696ee;
         border: 2px solid #7696ee;
@@ -164,12 +162,11 @@
         height: auto;
         max-height: 100%;
         overflow: hidden;
-        // scroll-behavior: smooth;
 
         &::-webkit-scrollbar {
-            width: 0px; // Hace el scrollbar invisible horizontalmente
-            height: 0px; // Hace el scrollbar invisible verticalmente
-            display: none; // Asegura que no ocupe espacio (opcional, pero útil)
+            width: 0px;
+            height: 0px;
+            display: none;
         }
 
     }

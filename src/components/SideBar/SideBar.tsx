@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import './Sidebar.scss';
 import { HamburguerMenu } from '../HamburguerMenu/HamburguerMenu';
 
@@ -32,9 +31,7 @@ const menuList = [
 export const Sidebar = () => {
 
 
-    const [activeItem, setActiveItem] = useState('patient');
 
-    const isActive = (itemId: string) => (itemId === activeItem ? 'sidebar__menu-list-active' : '');
     return (
         <div className="sidebar">
             <div className="sidebar__title">

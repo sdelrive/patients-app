@@ -8,10 +8,7 @@
     top: 50%;
     left: 50%;
 
-    // Animación de entrada/salida (opcional, pero mejora la UX)
-    // transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    // transform: translateX(100%); // Inicialmente fuera de la pantalla
-    // opacity: 0;
+
 
     transform: translate(-50%, -50%);
 
