@@ -1,0 +1,159 @@
+.patient-card {
+
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.1); // Ejemplo: sombra ligera hacia abajo    cursor: pointer;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    font-size: 18px;
+
+
+    @media (max-width: 1300px) {
+        font-size: 16px;
+    }
+
+
+    @media (max-width: 950px) {
+        width: 60%;
+        height: 50px;
+        flex-direction: row;
+        font-size: 15px;
+        align-items: center;
+
+
+    }
+
+
+
+
+
+
+
+
+
+}
+
+.patient-body {
+
+    @media (max-width: 950px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        width: 80%;
+
+    }
+
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+
+
+
+
+}
+
+.patient-avatar {
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+}
+
+
+.patient-info {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    font-size: 1em;
+
+
+
+
+    @media (max-width: 1300px) {
+        gap: 10%;
+    }
+
+    @media (max-width: 950px) {
+        gap: 0%;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+
+
+    &-name,
+    &-id {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0px;
+        }
+
+
+        p:first-child {
+
+            font-weight: 200;
+            color: rgb(95, 95, 95);
+            font-weight: 100;
+        }
+    }
+
+}
+
+
+.patient-footer {
+    cursor: pointer;
+
+
+    @media (max-width: 550px) {
+        display: none;
+
+    }
+
+    button {
+        font-size: 1em;
+        font-weight: 400;
+        // padding: 12px 32px;
+        border-radius: 9999px;
+        background-color: #7696ee;
+        border: 2px solid #7696ee;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        width: 60%;
+
+        &:hover {
+            background-color: #b8c8f3;
+            border: 2px solid #b8c8f3;
+
+            color: rgb(37, 37, 37);
+        }
+
+
+
+
+
+        @media (max-width: 950px) {
+            width: 100%;
+            height: 20px;
+            font-size: 0.5em;
+
+
+
+        }
+
+
+
+    }
+}

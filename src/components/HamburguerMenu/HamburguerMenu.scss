@@ -1,0 +1,93 @@
+// --- Definición de Variables y Keyframes ---
+
+$color-fondo-principal: #331f6e;
+$color-texto-principal: #ffffff;
+$color-resaltado-activo: rgba(255, 255, 255, 0.15);
+$ancho-desktop-min: 768px;
+
+@keyframes fadeMenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.hamburguer-menu {
+    cursor: pointer;
+    z-index: 1000;
+
+
+
+
+    span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: white;
+        transition: all 300ms ease-in-out;
+        transform-origin: 2px 1px; // Punto de pivote para la rotación
+    }
+}
+
+.hamburguer-menu>span:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+
+.menu-items {
+    padding: 1.625rem;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    width: 30%;
+    min-width: 250px;
+    background: #040635f3;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-out, visibility 300ms ease-out;
+
+    >a {
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 0.625rem 1.5rem;
+        transition: background-color 200ms ease-in-out;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+
+.menu.open {
+
+    .hamburguer-menu>span:first-child {
+        transform: rotate(45deg);
+    }
+
+    .hamburguer-menu>span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer-menu>span:last-child {
+        transform: rotate(-45deg);
+    }
+
+    .menu-items {
+        opacity: 1;
+        visibility: visible;
+
+        animation: fadeMenu 400ms ease-in-out forwards;
+
+        transition: none;
+    }
+}

@@ -1,0 +1,22 @@
+.home {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    // margin: auto;
+    display: flex;
+
+    h1 {
+        margin: 0px;
+    }
+}
+
+
+.home-complement-patient {
+    width: 30%;
+
+    @media (max-width: 850px) {
+        display: none;
+    }
+}

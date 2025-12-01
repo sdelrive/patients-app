@@ -1,0 +1,112 @@
+$primary-color: #2c1174;
+$light-bg: #e6e0ff;
+$sidebar-bg: #f3f3f3;
+$dark-blue: #20226A;
+$dark-blue-hover: #494daa;
+
+
+.complement-patient {
+    height: 50%;
+    width: 90%;
+    margin: 8% auto;
+}
+
+
+
+
+
+.add-patient {
+
+
+    &-button {
+        font-size: 1em;
+        font-weight: 600;
+        height: 30px;
+        // padding: 12px 32px;
+        border-radius: 10px;
+        background-color: $dark-blue;
+        border: 2px solid $dark-blue;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        width: 100%;
+
+        color: $light-bg;
+
+        &:hover {
+            background-color: #b8c8f3;
+            border: 2px solid #b8c8f3;
+
+            color: rgb(37, 37, 37);
+        }
+
+
+
+
+
+        @media (max-width: 950px) {
+            width: 100%;
+            height: 20px;
+            font-size: 0.5em;
+
+
+
+        }
+
+
+
+    }
+
+    &-button-confirm {
+        font-size: 1em;
+        font-weight: 600;
+        height: 30px;
+        // padding: 12px 32px;
+        border-radius: 10px;
+        background-color: green;
+        border: 2px solid green;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        width: 100%;
+
+        color: $light-bg;
+
+        &:hover {
+            background-color: rgb(185, 226, 185);
+            border: 2px solid rgb(185, 226, 185);
+
+            color: rgb(37, 37, 37);
+        }
+
+
+
+
+
+        @media (max-width: 950px) {
+            width: 100%;
+            height: 20px;
+            font-size: 0.5em;
+
+
+
+        }
+
+
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+
+
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid $light-bg;
+            background-color: $light-bg;
+            color: $dark-blue;
+        }
+    }
+
+}

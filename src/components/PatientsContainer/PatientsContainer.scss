@@ -1,0 +1,46 @@
+.patients-container {
+    width: 70%;
+
+    @media (max-width: 850px) {
+        width: 100%;
+    }
+
+    overflow-y: scroll;
+    height: 90%;
+    margin-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+    &::-webkit-scrollbar {
+        width: 0px; // Hace el scrollbar invisible horizontalmente
+        height: 0px; // Hace el scrollbar invisible verticalmente
+        display: none; // Asegura que no ocupe espacio (opcional, pero útil)
+    }
+}
+
+
+.patients-search-bar {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+}
+
+
+.patients-container--modal-open {
+    background-color: rgb(8, 2, 65);
+    opacity: 0.8;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 8px;
+    left: 0;
+    overflow: hidden;
+    z-index: 5;
+    width: 62%;
+    left: 15.4%;
+    height: 100%
+}
